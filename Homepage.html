@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Twitter Home Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/Home.css">
+</head>
+<body>
+   <header>
+   	<div class="wrapper">
+   		<img src="Images/homeImg/home_logo.png">
+   		<img src="Images/homeImg/Home_page-05.png">
+   		<div style="display:flex;     position: relative;
+    left: 4%;">
+   			<img src="Images/homeImg/Home_page-10.png" onclick="profilePageRedir()" style="cursor: pointer;">
+   			<button id="logout">Logout</button>
+   		</div></div>
+   </header>
+   <div class="container">
+   	<div class="sidebar">
+   		<div class="row profile">
+   			<div class="header"></div>
+   			<div class="body">
+   				<div class="left">
+   					<img src="Images/homeImg/user.png" alt="profile" style="width:80px">
+   				</div><div class="right">
+   					<div class="username">UserName</div>
+   					<div class="userid">@Login user-id</div>
+   				</div></div>
+   				<div class="stats" style="display: flex;">
+   					<div class="box">
+   						<p>Tweets</p>
+   						<p>1.56M</p>
+   					</div>
+   					<div class="box" id="box2">
+   						<p>Following</p>
+   						<p>5.5M</p>
+   						
+   					</div>
+   					<div class="box" id="box3">
+   						<p>Followers</p>
+   						<p>10M</p>
+   					</div>
+   				</div>
+   			</div>
+   			<div class="row follow">
+   				<div class="follow-header">
+   					<span><b>Who to follow</b></span>
+   					<span>.Refresh</span>
+   					<span>.View ALL</span>
+   				</div>
+   				<div class="follow-body">
+   		
+   					<!-- <div class="user">
+   						<div class="user-avatar">
+   							<img src="Images/homeImg/user.png" alt="Avatar">
+   						</div>
+   						<div class="user-avatar">
+   							<span class="username"></span>
+   							<span class="userid">@</span>
+   							<a class="btn follow" href="#">Follow</a>
+   						</div>
+   					</div> -->
+   				</div>
+   				<div class="follow-footer">
+   					<p>Find People you know</p>
+   				</div>
+   			</div>
+   			<div class="row">
+   				<div class="disclaimer">
+   					<p style="padding: 5%; color: grey;">&copy;2019.Twitter.about help terms.........Policy Privacy Policy Cookies Markating bussiness Devloper contact us lorem eev vevv%T#$#%T% $T$%T$% T$T$% $$ </p>
+   				</div>
+   			</div>
+   		</div>
+<div class="main">
+	<div class="row1">
+		<div class="user-avatar" style="width:100%">
+			<img src="Images/homeImg/user.png" alt="Avatar" style="vertical-align: middle;">
+			<input type="text" id="happening" name="@"
+			placeholder="  .Tell me whats happening??" style="width:86%;"></div></div>
+			<div class="row1">
+				<!-- <div class="user-avatar" style="width:100%">
+					<div class="comment-header">
+						<div class="box">
+							<img src="Images/homeImg/user.png" alt="Avatar" style="vertical-align: middle;">
+							<span></span>
+							<span></span>
+						</div>
+						<div class="box">
+							<img src="">
+						</div>
+					</div>
+					    <div class="comment-body">
+						<p style="margin:4% ">
+							</p>
+						</div>
+						<div class="comment-footer">
+							<div>
+								'<img src="Images/homeImg/Home_page-06.png" alt="comment">
+								<span></span>
+							</div>
+							<div>
+								<img src="Images/homeImg/Home_page-07.png" alt="refresh">
+								<span></span>
+							</div>
+							<div>
+								<img src="Images/homeImg/Home_page-08.png" alt="heart">
+								<span></span>
+							</div>
+							<div>
+								<img src="Images/homeImg/Home_page-09.png" alt="mail">
+								<span></span>
+							</div>
+						</div>
+					</div> -->
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="JS/DOMHomepage.js"></script>
+</body>
+</html>

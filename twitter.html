@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Landing page Mockup</title>
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/twitter.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<script type="text/javascript">
+
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+
+// ----------------------------------------------------------------------------------------------------------------
+// Use the same username and password to login
+// PURPOSE​
+//  To loginENDPOINT​: /users/login
+//  METHOD​: POST
+//  SAMPLE​: https://fsd1.herokuapp.com/users/
+//  loginbody: application/json{“user_email”: “​johnmathews_official@gmail.com​”,“user_pass”: “fsd_2019”}
+//  RESPONSE STRUCTURE​:{   
+// 	  "status": "success",   
+//       "message": "Logged in successfully"}
+
+
+// use the same  user details for signup 
+// PURPOSE​: To sign up new userMETHOD​: POSTENDPOINT​: /users/createSAMPLE​: ​https://fsd1.herokuapp.com/users/create{user_name: “user_name1”user_email: “user_name12@gmail.com”user_pass: “pass12”}RESPONSE_STRUCTURE:{"status": "success",    "message": "User added successfully!!!",    "data": {        "userId": 14    }}
+
+</script>
+</head>
+<body>
+	<header>
+		<img src="Images/logo.png">
+	</header>
+	<section>
+		<!-- Pull request -->
+		<ul>
+			<li><img src="Images/interests.png">Follow your interests.</li>
+            <li><img src="Images/people.png">Hear what people are talking about.</li>
+			<li><img src="Images/conversation.png">Join the conversation.</li>
+		</ul>
+	   
+	   
+		<h1>See what's happening in the world right now</h1>
+		<h2>Join Twitter today</h2>
+		 <div class="but1"><button class="myButton"><a href="#" onclick="toggle_visibility('signup');">SIGN UP</a></button>
+		<button class="myButton" ><a href="#" onclick="toggle_visibility('login');">LOG IN</a></button>
+	     </div>
+		<div id="signup" class="container">
+			<div class=cont2>
+				<div id=one>
+					<h3>SIGN UP TO TWITTER</h3>
+				</div>
+				<div class="two">
+					<img src="Images/Icons-15.png" class="centre">
+					
+					
+				</div>
+				<div class=thr>
+					<form onsubmit="return formvalidation()">
+							<!-- <legends>Details</legends><br> -->
+							<div>
+							<input class='validuser' type="text" name="username" textarea="Username" placeholder="Username" >
+							<span  class='notvalid'></span>
+							</div>
+							<div>
+							<input class='validemail'  type="email" name="email" placeholder="Email" > 
+							<span class='notvalid2'></span>
+							</div>
+							<div>
+							<input class='validpass' type="password" name="pass" placeholder="Password" > 
+							<span class='notvalid3'></span>
+							</div>
+							<div>
+							<input class='validconfirm' type="password" name="pass" placeholder="Confirm Password" > <BR>
+							<span class='notvalid4'></span>
+							</div>
+							<div>
+							<button class="signup" type="submit">SIGN UP</button>
+							</div>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+		<div id="login" class="container2">
+			
+				<div id=one2>
+					<h3>Login Page</h3>
+				</div>
+				
+				<div class=thr2>
+					<form onsubmit="return validatelogin()"   method="POST">
+						
+							<div style='margin-top: 53px;'>
+							<input class="q" type="email" name="email1" placeholder="Email"  style="display: block;
+																												margin-left: auto;
+																												margin-right: auto;
+																												width:20%;
+																												margin: 20px;
+																												border: 1px solid lightgrey;
+																												border-radius: 2px;
+																												width:80%;
+																												display: block;
+																											    border-radius: 15px;
+																												border-style: groove;
+																											    background-color: #E7EFEF;
+																											    padding:3%;"> 
+							<span class='validlogin'> </span>																				
+							</div>
+							<div>																				
+							<input id='q' class="q" type="password" name="pass2" placeholder="Password"  style="display: block;
+																												margin-left: auto;
+																												margin-right: auto;
+																												width:20%;
+																												margin: 20px;
+																												border: 1px solid lightgrey;
+																												border-radius: 2px;
+																												width:80%;
+																												display: block;
+																											    border-radius: 15px;
+																												border-style: groove;
+																											    background-color: #E7EFEF;
+							padding:3%;" >
+							<span class='validloginp'></span></div>
+							<div style='padding: 25px;'></div>
+							<button class="Login" type="submit">Login</button>
+						
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer >
+		
+		
+			<a href="2">About Us</a> |
+			<a href="5">Help Center</a> |
+			<a href="5">Blog </a> |
+			<a href="2">Status</a>
+
+	</footer>
+<script src="JS/twitter.js">
+</script>
+</body>
+</html>
